@@ -1,3 +1,6 @@
+# set defaults
+export EDITOR=nano
+
 # add .zfunctions
 fpath=( "$HOME/.zfunctions" $fpath )
 
