@@ -25,6 +25,10 @@ export SAVEHIST=100000
 setopt appendhistory
 
 # completion
+fpath=("$HOME/.zsh/zsh-completions" $fpath)
+autoload -U compinit; compinit
+_comp_options+=(globdots) # include dotfiles in completion
+zstyle ':completion:*' menu select
 
 
 # initialize prompt
