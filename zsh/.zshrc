@@ -18,6 +18,12 @@ bindkey  "^[[3~"   delete-char             # del
 bindkey  "^[^?"    backward-delete-word    # alt-backspace
 bindkey  "^[^[[3~" delete-word             # alt-del
 
+# history
+export HISTFILE=~/.zsh_history
+export HISTSIZE=100000
+export SAVEHIST=100000
+setopt appendhistory
+
 # completion
 
 
