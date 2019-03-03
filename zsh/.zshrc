@@ -30,6 +30,8 @@ autoload -U compinit; compinit
 _comp_options+=(globdots) # include dotfiles in completion
 zstyle ':completion:*' menu select
 
+# autosuggestions
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # initialize prompt
 export PURE_PROMPT_SYMBOL='$'
