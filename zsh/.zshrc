@@ -1,6 +1,9 @@
 # set defaults
 export EDITOR=nano
 
+# set aliases
+alias ls='gls -A --color=auto'
+
 # add .zfunctions
 fpath=( "$HOME/.zsh/functions" $fpath )
 
@@ -37,3 +40,6 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PURE_PROMPT_SYMBOL='$'
 autoload -U promptinit; promptinit
 prompt pure
+
+# colors
+export LS_COLORS="$(cat ~/.zsh/ls_colors)"
