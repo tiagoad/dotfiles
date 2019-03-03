@@ -1,0 +1,6 @@
+[include]
+        path = ~/.gitalias/gitalias.txt
+
+[user]
+	name = Tiago Dias
+	email = tiago@tdias.tech
