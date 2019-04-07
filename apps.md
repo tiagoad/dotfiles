@@ -46,6 +46,9 @@ Visual Studio Code
 🔸 IntelliJ IDEA
 > Full-featured IDE
 
+🔸 Tower
+> Git GUI
+
 Cloud Storage
 -------------
 
