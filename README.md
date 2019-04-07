@@ -1,5 +1,7 @@
 # dotfiles
 
+![screenshot](./screenshot.png)
+
 These are my personal configurations.
 This is obviously very tailored to my personal use,
 although it might contain things others would find useful.
