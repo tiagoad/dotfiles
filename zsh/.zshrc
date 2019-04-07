@@ -2,13 +2,16 @@
 export EDITOR=nano
 
 # set aliases
-alias ls='gls -A --color=auto'
+alias ls='gls -A --color=auto --group-directories-first'
 
 # add .zfunctions
 fpath=( "$HOME/.zsh/functions" $fpath )
 
+# add homebrew completions
+fpath=( "/usr/local/share/zsh/site-functions/" $fpath )
+
 # add .bin to path
-PATH=$PATH:$HOME/.bin
+PATH=$PATH:$HOME/bin
 
 # key bindings
 bindkey  "^[[H"    beginning-of-line       # home
@@ -42,4 +45,8 @@ autoload -U promptinit; promptinit
 prompt pure
 
 # colors
-export LS_COLORS="$(cat ~/.zsh/ls_colors)"
+export LS_COLORS="$(<~/.zsh/ls_colors)"
+zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
+
+# ruby
+export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
