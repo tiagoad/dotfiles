@@ -7,6 +7,9 @@ alias ls='gls -A --color=auto --group-directories-first'
 # add .zfunctions
 fpath=( "$HOME/.zsh/functions" $fpath )
 
+# load .zlocal
+source ~/.zlocal 2>/dev/null
+
 # add homebrew completions
 fpath=( "/usr/local/share/zsh/site-functions/" $fpath )
 
