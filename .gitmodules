@@ -7,3 +7,6 @@
 [submodule "git/.gitalias"]
 	path = git/.gitalias
 	url = https://github.com/GitAlias/gitalias.git
+[submodule "zsh/.zsh/zsh-wakatime"]
+	path = zsh/.zsh/zsh-wakatime
+	url = https://github.com/wbingli/zsh-wakatime.git
