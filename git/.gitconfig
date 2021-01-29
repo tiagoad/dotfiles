@@ -4,3 +4,7 @@
 [user]
 	name = Tiago Dias
 	email = tiago@tdias.tech
+[core]
+	excludesfile = /Users/tiago/.gitignore_global
+[pull]
+	rebase = true
